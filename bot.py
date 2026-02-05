@@ -286,7 +286,7 @@ async def process_payment_selection(update: Update, context: ContextTypes.DEFAUL
         f"📱 Tel: {user_info.get('phone', \"Noma'lum\")}\n"
         f"💳 To'lov: {payment_info['name']}\n"
         f"🆔 User ID: {user_id}\n\n"
-        f"Chek kutilmoqda...",
+        f"Chek kutilmoqda..."
         parse_mode='HTML'
     )
     
