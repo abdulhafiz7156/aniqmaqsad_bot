@@ -50,7 +50,7 @@ PAYMENT_INFO = {
 
 # ============== MATNLAR ==============
 WELCOME_POST = """
-🎯 <b>Spreadsheet Template</b>
+🎯 <b>Family Finance</b>
 
 Sizning biznesingiz/shaxsiy moliyangiz uchun professional Excel/Google Sheets shablon!
 
@@ -124,7 +124,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     
     await update.message.reply_text(
         f"Assalomu alaykum! 👋\n\n"
-        f"Spreadsheet Template botiga xush kelibsiz!\n\n"
+        f"Aniq maqsad boti botiga xush kelibsiz!\n\n"
         f"Davom etish uchun ismingizni yozing:"
     )
     return NAME
