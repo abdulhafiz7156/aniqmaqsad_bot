@@ -282,8 +282,8 @@ async def process_payment_selection(update: Update, context: ContextTypes.DEFAUL
     await context.bot.send_message(
         ADMIN_ID,
         f"🆕 <b>Yangi buyurtma!</b>\n\n"
-        f"👤 Ism: {user_info.get('name', "Nomalum")}"
-        f"📱 Tel: {user_info.get('phone', "Nomalum")}"
+        f"👤 Ism: {user_info.get('name', 'Nomalum')}\n"
+        f"📱 Tel: {user_info.get('phone', 'Nomalum')}\n"
         f"💳 To'lov: {payment_info['name']}\n"
         f"🆔 User ID: {user_id}\n\n"
         f"Chek kutilmoqda...",
@@ -308,8 +308,8 @@ async def receive_receipt(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
     
     admin_message = (
         f"🧾 <b>Yangi chek!</b>\n\n"
-        f"👤 Ism: {user_info.get('name', "Nomalum")}"
-        f"📱 Tel: {user_info.get('phone', "Nomalum")}"
+        f"👤 Ism: {user_info.get('name', 'Nomalum')}\n"
+        f"📱 Tel: {user_info.get('phone', 'Nomalum')}\n"
         f"🆔 User ID: {user_id}"
     )
     
